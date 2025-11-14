@@ -74,6 +74,7 @@ async def gender(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await message.reply_text("Пожалуйста, выберите из кнопок.")
         return GENDER
 
+
     user_data = _ensure_user_data(context)
     if "Мужской" in user_input:
         user_data["gender"] = "м"
@@ -241,7 +242,8 @@ async def activity(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"• Жиры: {fat} г\n"
         f"• Углеводы: {carbs} г\n\n"
         "💡 Совет: эти значения — ориентир. "
-        "Корректируйте под самочувствие и результаты!"
+        "Корректируйте под самочувствие и результаты и помни, что ты уже Чемпион!"
+        "Стань лучшей версией себя при помощи дисциплины!"
     )
 
     await message.reply_text(result, reply_markup=ReplyKeyboardRemove())
