@@ -210,7 +210,7 @@ async def activity(update: Update, context: ContextTypes.DEFAULT_TYPE):
         bmr = 10 * weight + 6.25 * height - 5 * age + 5
     else:
         bmr = 10 * weight + 6.25 * height - 5 * age - 161
-
+        
     # Multiplier
     mult = {"1": 1.2, "2": 1.375, "3": 1.55, "4": 1.725, "5": 1.9}[activity_value]
     tdee = bmr * mult
@@ -236,7 +236,7 @@ async def activity(update: Update, context: ContextTypes.DEFAULT_TYPE):
     carbs = round(carbs)
 
     result = (
-        "✅ Расчёт готов!\n\n"
+        "✅ Твой расчёт готов!\n\n"
         f"• Калории: {calories} ккал\n"
         f"• Белки: {protein} г\n"
         f"• Жиры: {fat} г\n"
