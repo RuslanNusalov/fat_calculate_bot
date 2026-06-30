@@ -14,7 +14,7 @@ from telegram.ext import (
 
 # Попытка загрузить переменные из .env файла
 try:
-    from dotenv import load_dotenv
+    from dotenv import load_dotenv1
     load_dotenv()
 except ImportError:
     pass  # python-dotenv не установлен, используем системные переменные окружения
